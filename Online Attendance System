@@ -1,0 +1,395 @@
+ package project;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JCheckBox;
+import javax.swing.JOptionPane;
+class third extends Frame implements ActionListener
+{ 
+	Frame u=new Frame();
+	Label le=new Label("ENTER THE SUBJECT");
+	Button ba1=new Button("JAVA");
+	Button ba2=new Button("CAO");
+	Button ba3=new Button("OS");
+	Button ba4=new Button("DS");
+	  third()
+	   {
+		  u.setVisible(true);
+			u.setLayout(null);
+			u.setBounds(100,100,500,500);
+		  u.setTitle("ENTER THE SUBJECT");
+
+         ba1.setBounds(100,200,80,40);
+         ba2.setBounds(190,200,80,40);
+         ba3.setBounds(280,200,80,40);
+         ba4.setBounds(370,200,80,40);
+         le.setBounds(60,100,400,60);
+         le.setFont(new Font("Tahoma",Font.PLAIN,30));
+         u.add(le);
+		u.add(ba1);
+	    u.add(ba2);
+	    u.add(ba4);
+		u.add(ba3);
+	    ba1.addActionListener(this);
+	    ba2.addActionListener(this);
+	    ba3.addActionListener(this);
+	    ba4.addActionListener(this);
+      }
+       
+	
+	public void actionPerformed(ActionEvent z) 
+	{
+		if(z.getSource()==ba1)
+		{
+	     second s1=new second();
+			//System.exit(-1);
+	    }
+		else if(z.getSource()==ba2)
+		{
+			second s1=new second();
+			//System.exit(-1);
+			}
+		else if(z.getSource()==ba3)
+		{
+			second s1=new second();
+			//System.exit(0);
+			}
+		else if(z.getSource()==ba4)
+		{
+			second s1=new second();
+			//System.exit(-1);
+			}
+		
+	
+	}
+	
+}
+
+class second extends Frame implements ActionListener
+{   String count="ATTENDANCE   HAS   BEEN   MARKED";
+	
+	Frame fl=new Frame();
+	Button v=new Button("SAVE & EXIT");
+	Label l1=new Label("NAME");
+	Label l2=new Label("ROLL NO.");
+	Label l3=new Label("PRESENT");
+	Label l4=new Label("ABSENT");
+	
+	Label q=new Label("Ashish");
+	Label q1=new Label("Sumit");
+	Label q2=new Label("Ebenezer");
+	Label q3=new Label("Nafees");
+	Label q4=new Label("Rahul");
+	Label q5=new Label("Mahesh");
+	Label q6=new Label("Gunjan");
+	Label q7=new Label("Ankita");
+	Label q8=new Label("Rishabh");
+	Label q9=new Label("Gurvindar");
+	Label q10=new Label("Suraj");
+	Label q11=new Label("Arvind");
+	
+	Label w=new Label("01");
+	Label w1=new Label("02");
+	Label w2=new Label("03");
+	Label w3=new Label("04");
+	Label w4=new Label("05");
+	Label w5=new Label("06");
+	Label w6=new Label("07");
+	Label w7=new Label("08");
+	Label w8=new Label("09");
+	Label w9=new Label("10");
+	Label w10=new Label("11");
+	Label w11=new Label("12");
+
+	 JCheckBox c1 = new JCheckBox("P");  
+     Checkbox c2 = new Checkbox("P");
+	 Checkbox c3 = new Checkbox("P");  
+     Checkbox c4 = new Checkbox("P");
+	 Checkbox c5 = new Checkbox("P");  
+     Checkbox c6 = new Checkbox("P");
+	 Checkbox c7 = new Checkbox("P");  
+     Checkbox c8 = new Checkbox("P");
+	 Checkbox c9 = new Checkbox("P");  
+     Checkbox c10 = new Checkbox("P");
+	 Checkbox c11 = new Checkbox("P");  
+     Checkbox c12 = new Checkbox("P");
+     
+     Checkbox ca1 = new Checkbox("A");  
+     Checkbox ca2 = new Checkbox("A");
+	 Checkbox ca3 = new Checkbox("A");  
+     Checkbox ca4 = new Checkbox("A");
+	 Checkbox ca5 = new Checkbox("A");  
+     Checkbox ca6 = new Checkbox("A");
+	 Checkbox ca7 = new Checkbox("A");  
+     Checkbox ca8 = new Checkbox("A");
+	 Checkbox ca9 = new Checkbox("A");  
+     Checkbox ca10 =new Checkbox("A");
+	 Checkbox ca11 = new Checkbox("A");  
+     Checkbox ca12 = new Checkbox("A");
+     TextField tg=new TextField(30);       
+
+	 public second()
+	{
+		 fl.setVisible(true);
+		 fl.setLayout(null);
+		 fl.setSize(600,1000);
+		 
+		 
+		 l1.setBounds(20,50,80,30);
+		 l2.setBounds(110,50,80,30);
+		 l3.setBounds(200,50,80,30);
+		 l4.setBounds(290,50,80,30); 
+		 
+		 
+		 q.setBounds(20,100,80,30);
+		 q1.setBounds(20,150,80,30);
+		 q2.setBounds(20,200,80,30);
+		 q3.setBounds(20,250,80,30);
+		 q4.setBounds(20,300,80,30);
+		 q5.setBounds(20,350,80,30);
+		 q6.setBounds(20,400,80,30);
+		 q7.setBounds(20,450,80,30);
+		 q8.setBounds(20,500,80,30);
+		 q9.setBounds(20,550,80,30);
+		 q10.setBounds(20,600,80,30);
+		 q11.setBounds(20,650,80,30);
+		 
+		 
+		 w.setBounds(110,100,80,30);
+		 w1.setBounds(110,150,80,30);
+		 w2.setBounds(110,200,80,30);
+		 w3.setBounds(110,250,80,30);
+		 w4.setBounds(110,300,80,30);
+		 w5.setBounds(110,350,80,30);
+		 w6.setBounds(110,400,80,30);
+		 w7.setBounds(110,450,80,30);
+		 w8.setBounds(110,500,80,30);
+		 w9.setBounds(110,550,80,30);
+		 w10.setBounds(110,600,80,30);
+		 w11.setBounds(110,650,80,30);
+		 
+		 
+		 c1.setBounds(200,150,80,30);
+		 c2.setBounds(200,200,80,30);
+		 c3.setBounds(200,250,80,30);
+		 c4.setBounds(200,300,80,30);
+		 c5.setBounds(200,350,80,30);
+		 c6.setBounds(200,400,80,30);
+		 c7.setBounds(200,450,80,30);
+		 c8.setBounds(200,500,80,30);
+		 c9.setBounds(200,550,80,30);
+		 c10.setBounds(200,600,80,30);
+		 c11.setBounds(200,650,80,30);
+		 c12.setBounds(200,100,80,30);
+		 
+		 
+		 ca1.setBounds(290,150,80,30);
+		 ca2.setBounds(290,200,80,30);
+		 ca3.setBounds(290,250,80,30);
+		 ca4.setBounds(290,300,80,30);
+		 ca5.setBounds(290,350,80,30);
+		 ca6.setBounds(290,400,80,30);
+		 ca7.setBounds(290,450,80,30);
+		 ca8.setBounds(290,500,80,30);
+		 ca9.setBounds(290,550,80,30);
+		 ca10.setBounds(290,600,80,30);
+		 ca11.setBounds(290,650,80,30);
+		 ca12.setBounds(290,100,80,30);
+		 tg.setBounds(380,300,30,20);
+		 TextField tg1=new TextField();
+		 Label lk=new Label("ENTER DATE");
+		 lk.setBounds(380,260,150,20);
+		 Label ll1=new Label("/");
+		 ll1.setBounds(420,300,20,20);
+		 Label ll2=new Label("/");
+		 ll2.setBounds(470,300,20,20);
+		 tg1.setBounds(440,300,30,20);
+		 TextField tg2=new TextField();
+		 tg2.setBounds(490,300,30,20);
+		 
+		 v.setBounds( 100,710,80,30);
+		 fl.add(lk);
+		 fl.add(ll1);
+		 fl.add(ll2);
+		 fl.add(tg1);
+		 fl.add(tg2);
+		 fl.add(tg);
+		 fl.add(l1);
+		 fl.add(l2);
+		 fl.add(l3);
+		 fl.add(l4);
+		 
+		 fl.add(q);
+		 fl.add(q1);
+		 fl.add(q2);
+		 fl.add(q3);
+		 fl.add(q4);
+		 fl.add(q5);
+		 fl.add(q6);
+		 fl.add(q7);
+		 fl.add(q8);
+		 fl.add(q9);
+		 fl.add(q10);
+		 fl.add(q11);
+		 
+		 fl.add(w);
+		 fl.add(w1);
+		 fl.add(w2);
+		 fl.add(w3);
+		 fl.add(w4);
+		 fl.add(w5);
+		 fl.add(w6);
+		 fl.add(w7);
+		 fl.add(w8);
+		 fl.add(w9);
+		 fl.add(w10);
+		 fl.add(w11);
+		 
+		 
+		 
+		 fl.add(c1);
+		 fl.add(c2);
+		 fl.add(c3);
+		 fl.add(c4);
+		 fl.add(c5);
+		 fl.add(c6);
+		 fl.add(c7);
+		 fl.add(c8);
+		 fl.add(c9);
+		 fl.add(c10);
+		 fl.add(c11);
+		 fl.add(c12);
+		 
+		 fl.add(ca1);
+		 fl.add(ca2);
+		 fl.add(ca3);
+		 fl.add(ca4);
+		 fl.add(ca5);
+		 fl.add(ca6);
+		 fl.add(ca7);
+		 fl.add(ca8);
+		 fl.add(ca9);
+		 fl.add(ca10);
+		 fl.add(ca11);
+		 fl.add(ca12);
+		 fl.add(v);
+		 //if(c1.isSelected())
+		 //{
+		//	countp+=countp;
+		 //}
+		 v.addActionListener(this);
+		 
+			}
+
+	
+	public void actionPerformed(ActionEvent a) {
+		if(a.getSource()==v)
+		{
+			save s1=new save(count);
+			
+
+			
+		}
+		
+	}	
+}
+class save extends Frame implements ActionListener
+{   Frame h=new Frame();
+    TextField n=new TextField();
+    Button bh=new Button("EXIT");
+	save(String count)
+	{
+	     h.setSize(400,400);
+	     n.setBounds(100,50,60,20);
+	     n.setFont(new Font("Tahoma",Font.PLAIN,20));
+	     bh.setBounds(150,150,40,40);
+	     h.add(bh);
+	     h.add(n);
+	     h.setVisible(true);
+	     h.setLayout(null);
+	     n.setText(String.valueOf(count));
+	     bh.addActionListener(this);
+	     
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent p) {
+		// TODO Auto-generated method stub
+		if(p.getSource()==bh)
+		{
+		JOptionPane.showMessageDialog(null,"THANKYOU FOR USING");
+		System.exit(-1);
+		}
+	}
+	
+}
+
+public class login extends Frame implements ActionListener{
+	
+	
+
+	Frame f1=new Frame();
+	Label l3=new Label("LOGIN");
+	Button b1=new Button();
+	Button x=new Button();
+	Label l1=new Label("User");                           
+	TextField t1=new TextField(30);
+	Label l2=new Label("Password");
+	TextField t2=new TextField(30);
+	public login() 
+	{
+		f1.setVisible(true);
+		f1.setLayout(null);
+		f1.setBounds(100,100,450,364);
+	x= new Button("CANCEL");
+	b1 = new Button("Login");
+	l1.setBounds(43,79,107,34);
+	t1.setBounds(206,79,167,30);
+	l2.setBounds(43,147,107,34);
+	t2.setBounds(206,147,168,34);
+	b1.setBounds(57,232,89,23);
+	x.setBounds(170,232,89,23);
+	
+	l3.setBounds(126,35,142,24);
+	l3.setFont(new Font("Tahoma",Font.PLAIN,20));
+	f1.add(l3);
+	f1.add(l1);
+	f1.add(t1);
+	f1.add(l2);
+	f1.add(t2);
+	f1.add(b1);
+	f1.add(x);
+	b1.addActionListener(this);
+    x.addActionListener(this);
+	}
+
+	public static void main(String[] args) {
+		login f=new login();
+	}
+
+	
+	public void actionPerformed(ActionEvent e)
+	{
+		String u=t1.getText();
+		String p=t2.getText();
+		
+		if(e.getSource()==b1)
+		{ if(u.equals("java") && p.equals("java"))
+		{
+			JOptionPane.showMessageDialog(null,"you are loged in");
+			
+			third tx=new third();
+		}		
+
+		}
+		else if(e.getSource()==x)
+		{
+			JOptionPane.showMessageDialog(null,"Thankyou for using the application");
+			System.exit(-1);
+		}
+     		
+		
+	}
+
+}
